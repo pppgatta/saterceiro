@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../css/login.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <title>Login</title>
+</head>
+<body>
+
+<div class="container">
+
+        <br/>
+                    <div class="background">
+                        <div class="shape"></div>
+                        <div class="shape"></div>
+                    </div>
+
+<!--                        <form-->
+<!--                                th:action="@{/login}"-->
+<!--                                method="post" class="formulario"-->
+<!--                                th:object="${usuario}">-->
+
+<!--                            <h3>Faça seu login</h3>-->
+
+<!--                        <label for="username">Username</label>-->
+<!--                        <input th:field="*{nome}" type="text" placeholder="Nome" id="username">-->
+
+<!--                        <label for="password">Password</label>-->
+<!--                        <input th:field="*{senha}" type="password" placeholder="Senha" id="password">-->
+
+<!--                        <button type="submit">Logar</button>-->
+
+<!--                        </form>-->
+
+                        <form>
+                            <h3>Faça seu login</h3>
+
+                            <label for="username">Username</label>
+                            <input  type="text" placeholder="Nome" id="username">
+
+                            <label for="password">Password</label>
+                            <input  type="password" placeholder="Senha" id="password">
+
+                            <button onclick= "window.open('../home')">Logar</button>
+                            <button onclick= "window.open('/esquecisenha')"> Esqueceu a senha?</button>
+
+                        </form>
+
+</div>
+</body>
+</html>

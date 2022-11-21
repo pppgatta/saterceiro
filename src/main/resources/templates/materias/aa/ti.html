@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../css/home.css">
+    <link rel="stylesheet" href="../../bootstrap-5.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../fontawesome-5.15.3/css/all.css">
+    <title>Title</title>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #038c7f ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/home">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/usuario/edit">Minha Conta</a>
+                </li>
+            </ul>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Matérias
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/materias/primeiro">Primeiro Ano</a>
+                            <a class="dropdown-item" href="/materias/segundo">Segundo Ano</a>
+                            <a class="dropdown-item" href="/materias/terceiro">Terceiro Ano</a>
+                        </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div class="card">
+    <div class="top">
+        <div class="userDerails">
+            <div class="profile_img">
+                <!-- <img src="css/usuario_ft.png" class="cover"> -->
+            </div>
+            <h3>marimmalafaia<br><spam>Floripa, Santa Catarina</spam></h3>
+        </div>
+        <div>
+            <img src="../../img/dot.png" class="dot">
+        </div>
+    </div>
+    <div class="imgBx">
+        <img src="../../img/ti1.JPG" class="cover">
+    </div>
+    <div class="actionBtns">
+        <div class="left">
+            <img id="coracao" src="../../img/heart.png" class="heart" onclick="likeButton()">
+            <img src="../../img/comment.png">
+            <img src="../../img/share.png">
+        </div>
+        <div class="right"></div>
+    </div>
+
+    <h4><div id="likes">444</div> likes</h4>
+    <h4 class="menssage"><b>marimmalafaia</b>Jesus gang</h4>
+    <h4 class="comements">veja todos os 23 comemntarios</h4>
+    <!--  <div class="addComments">-->
+    <!--    <input type="text" class="text" placeholder="Adicione um cometario">-->
+    <!--  </div>-->
+    <h5 class="postTime">há 2 horas</h5>
+</div>
+
+<script>
+        var curtida = false
+        function likeButton(){
+            var aux = parseInt(document.getElementById('likes').innerHTML)
+            var imglike = document.getElementById('coracao')
+
+            if (curtida == false){
+                var likes = aux+1
+                curtida = true
+                imglike.setAttribute('src', '../../img/heartRed.png');
+            }else{
+                var likes = aux-1
+                curtida = false
+                imglike.setAttribute('src', '../../img/heart.png');
+            }
+            document.getElementById('likes').innerHTML=likes
+        }
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+</html>

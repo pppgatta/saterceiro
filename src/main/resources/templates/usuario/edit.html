@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:margin-left="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../fontawesome-5.15.3/css/all.css">
+    <link rel="stylesheet" href="../css/dados.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark " style="background-color:  #038c7f ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/home">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/usuario/list">Lista de usuários</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<form>
+    <h4 class="tittle">Altere seus dados </h4>
+    <thead class="table-light">
+
+    <label class="imagemuser" for="usr"><img src="../img/user.png" width="90px" height="90px" alt="">
+        <input type="file" id="usr" >
+    </label>
+    </thead>
+
+
+    <div class="for" >
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingNome" placeholder="Nome" required>
+            <label for="floatingNome">Nome</label>
+        </div>
+
+
+        <div class="form-floating mb-3">
+            <input type="email"  class="form-control" id="floatingEmail" placeholder="email@gmail.com" required>
+            <label for="floatingemail">Email</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text"  class="form-control" id="floatingTelefone" placeholder="(48)991223456"  required>
+            <label for="floatingTelefone">Telefone</label>
+        </div>
+
+        <div class="form-floating">
+            <button type="submit"  style="background-color: green" class="btn " >Salvar</button>
+            <button type="button" style="background-color: red" class="btn" onclick="window.location.href='/usuario/edit'">Cancelar</button>
+                <br><br>
+            <button type="button" class="btn" style="background-color: #038C7f"   onclick="window.location.href='/maisconfiguracoes' ">Mais configuracoes</button>
+                </div>
+        </div>
+
+</form>
+
+
+
+<!--<div class="modal" tabindex="-1" id="modalDeletar">-->
+<!--    <div class="modal-dialog">-->
+<!--        <div class="modal-content">-->
+<!--            <div class="modal-header">-->
+<!--                <h5 class="modal-title">Atenção</h5>-->
+<!--                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                <p>Você realmente deseja deletar o registro?</p>-->
+<!--            </div>-->
+<!--            <div class="modal-footer">-->
+<!--                <button type="button"-->
+<!--                        class="btn btn-danger"-->
+<!--                        th:onclick="deletar()"-->
+<!--                >-->
+<!--                    Deletar-->
+<!--                </button>-->
+<!--                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<script src="../js/script.js"></script>
+<script src="../../static/js/jquery-3.6.0.min.js"></script>
+<script src="../../static/js/popper.min.js"></script>
+<script src="../../static/bootstrap-5.0.0/js/bootstrap.min.js/"></script>
+</body>
+
+</html>

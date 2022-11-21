@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+
+.container{
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+.tit h2{
+    padding-top: 20px;
+    padding-left: 30px;
+    font-size: 70px;
+    background: linear-gradient(0deg, rgb(168, 168, 168) 0%, rgb(141, 141, 141) 80%, rgba(0,0,0,1) 100%, rgba(0,0,0,1) 100%);
+}
+
+.table-responsive{
+    border: solid black 3px;
+    padding: 0px 0px 5px 0px;
+}
+
+
+form{
+    height: 550px;
+    width: 400px;
+    background-color: 038c7f;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid #038c7f;
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    margin-top: 35px;
+}
+
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: black;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+
+}
+
+.table-light {
+    padding: 0px;
+    margin-left: 20px;
+    --bs-table-bg: #808181;
+    --bs-table-striped-bg: #ecedee;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #dfe0e1;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #e5e6e7;
+    --bs-table-hover-color: #000;
+    color: #000;
+    border-color: #dfe0e1;
+}
+
+input[type="file"] {
+    display: none;
+
+}
+
+.container{
+margin-top: 0px;
+margin-left: 100px;
+}
+
+.form-floating mb-3{
+margin-top: 20px
+}
+
+.for{
+    margin-top: 30px;
+}
+
+.imagemuser{
+    margin-left: 36%;
+    padding-top: 2px;
+}
+.tittle{
+text-align: center;
+}
+
+.btn-info{
+    position:relative;
+    }
+    .btn{
+        border:radius;
+        border:10px;
+        color:#fff
+    }
